@@ -1,0 +1,103 @@
+body {
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    /* Here I used marging for the containers */
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+.logo {
+  /* Here I used is the logo styling */
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  color: rgb(160, 146, 20);
+  text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.logo:hover {
+  /* for the logo to change black when hovering over it*/
+  color: black;
+}
+
+.navbar-custom, /* Here I wanted to add specfic code for the navbar*/
+.navbar-custom .navbar-text {
+  color: rgb(48, 48, 48);
+}
+#navbar a:hover {
+  background-color: rgb(160, 146, 20);
+  color: white;
+}
+#navbar a.active {
+  background-color: rgb(160, 146, 20);
+  color: white;
+}
+
+.progress-height {
+  height: 30px;
+}
+
+.progress-bar {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    357deg,
+    rgba(255, 255, 255, 0.8687850140056023) 37%,
+    rgba(160, 146, 20, 0.7959558823529411) 100%
+  );
+  color: rgb(49, 49, 49);
+}
+
+.progress {
+  background-color: white;
+}
+
+.button-custom {
+  background-color: rgb(160, 146, 20);
+  color: white;
+}
+.hr-custom {
+  width: 15%;
+}
+.icon-custom:hover {
+  color: rgb(160, 146, 20);
+}
+.icon-custom {
+  color: black;
+}
+
+/* this is the tape styling for the picture on homepage*/
+@media (min-width: 1100px) {
+  /* Corner Effect */
+  .corners {
+    margin: 50px auto;
+    max-width: 600px;
+    position: relative;
+  }
+  .corners:after,
+  .corners:before {
+    background: #e6e6e6;
+    content: "";
+    height: 10%;
+    position: absolute;
+    top: -25px;
+    width: 30%;
+    box-shadow: 0 5px 10px -7px hsla(0, 0%, 0%, 0.5);
+  }
+  .corners:after {
+    right: 80%;
+    transform: rotate(-45deg);
+  }
+  .corners:before {
+    right: -8%;
+    transform: rotate(45deg);
+  }
+}
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+/*carousel height*/
+.carousel img {
+  width: 100%;
+  height: 50%;
+}

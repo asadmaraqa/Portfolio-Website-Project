@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;200;400&display=swap"
+      rel="stylesheet"
+    />
+    <!--This the the small broswer icon-->
+    <link rel="icon" href="Images/logo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <title>Asad Maraqa - Home</title>
+  </head>
+  <body>
+    <!--This a container that will hold my name-->
+    <div class="container-fluid">
+      <!--Text center will center it-->
+      <div class="text-center">
+        <!-- I have removed all of a tag proporties and made bold. Logo selecter is created by me to give color and font-->
+        <a class="text-decoration-none font-weight-bold logo" href="index.html"
+          >Asad Maraqa</a
+        >
+      </div>
+    </div>
+    <!--Here the navbar starts I have used navbar expand with two size md and lg-->
+    <nav
+      class="navbar navbar-expand-md navbar-expand-lg navbar-light container-fluid"
+    >
+      <!--this div holds the navbar content, first I moved it from the top with mt-3
+    then I centered it in the page-->
+      <div class="mt-3 mx-auto">
+        <!--This div has the button it will show when the screen is small for phones-->
+        <div id="navbar">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <!--Here i have the actual navbar content I had to make my own class to style better called "navbar-custom"
+            and used border to style and a shadow and made the button rounded-->
+            <ul
+              class="navbar-nav navbar-custom border-bottom border-end border-start shadow-sm rounded-3"
+            >
+              <!--here is home button it has styling and active for it change color so the user knows its the one 
+            the he or she are on-->
+              <li class="nav-item">
+                <a
+                  class="nav-link navbar-text rounded-3 active"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <!--Here are the other button for the navbar I hidden them because they are all the same as home-->
+              <li class="nav-item">
+                <a class="nav-link navbar-text rounded-3" href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text rounded-3" href="Skills.html"
+                  >Skills</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text rounded-3" href="education.html"
+                  >Education</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text rounded-3" href="projects.html"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text rounded-3" href="resume.html"
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text rounded-3" href="gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link navbar-text rounded-3"
+                  href="/references.html"
+                  >Refernces</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-text rounded-3" href="contact.html"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--First i put the picture and text in a container and centered it with mx-auto-->
+    <div class="container-fluid mx-auto">
+      <!--Here i moved it from the top 5 and used the container-custom to set up margins
+      ps-4 for the padding in the left-->
+      <div class="mt-5 container-custom ps-4">
+        <!--I have made a row to used bootstrap grid-->
+        <div class="row align-items-center">
+          <!--Here im using diffrent column sizes to make the page resposive -->
+          <div class="col-lg-4 col-md-5 col-sm-6 col-xs-5 hover-zoom corners">
+            <img
+              src="/Images/Me.jpg"
+              alt="My picture"
+              class="shadow-sm img-fluid rounded-3"
+            />
+          </div>
+          <div class="col-lg-8 col-md-7 col-sm-6 s-5 col-xs-7">
+            <h1
+              class="text-center display-3 align-items-center"
+              style="font-family: 'Caveat', cursive; color: rgb(160, 146, 20)"
+            >
+              Welcome to my portfolio!
+              <br />
+              Im a Software developer & a graphic designer.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
